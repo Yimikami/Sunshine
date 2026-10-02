@@ -1,7 +1,7 @@
 $ErrorActionPreference = 'Stop'
 $ProgressPreference    = 'SilentlyContinue'
 
-$Repo = 'bettie9/Sunshine'
+$Repo = 'Yimikami/Sunshine'
 
 $headers = @{ 'User-Agent' = 'Sunshine-Installer'; Accept = 'application/vnd.github+json' }
 $release = Invoke-RestMethod -Headers $headers -Uri "https://api.github.com/repos/$Repo/releases/latest"
