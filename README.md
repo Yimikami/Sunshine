@@ -51,15 +51,25 @@ For a broken skin package or a missing skin or form, use the [LeagueSkins issue 
 
 ### Sunshine Doctor
 
-Save [doctor.ps1](./doctor.ps1) and run these commands in PowerShell from the download folder.
+Open PowerShell in a folder where you can save the script. Download it with the command below or use the direct link and open PowerShell in the download folder. [Download doctor.ps1](https://raw.githubusercontent.com/Yimikami/Sunshine/main/doctor.ps1)
+
+```powershell
+Invoke-WebRequest -UseBasicParsing -Uri "https://raw.githubusercontent.com/Yimikami/Sunshine/main/doctor.ps1" -OutFile .\doctor.ps1
+```
+
+Run the read-only check.
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\doctor.ps1
+```
+
+Apply the available repairs.
+
+```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\doctor.ps1 -Fix
 ```
 
-The first command checks for problems. Add `-Fix` to apply the available repairs, or add `-Fix -WhatIf` to preview them.
-
+Add `-WhatIf` after `-Fix` to preview the repairs.
 
 <details>
 <summary>Uninstall</summary>
