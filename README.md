@@ -49,6 +49,18 @@ Join [Discord](https://discord.gg/8zsgZUxVgW) or [open an issue](https://github.
 
 For a broken skin package or a missing skin or form, use the [LeagueSkins issue forms](https://github.com/bettie9/LeagueSkins/issues/new/choose). See the [release notes](https://github.com/Yimikami/Sunshine/releases) for updates, or open **Settings → Support → Release notes** to read the notes for your installed version.
 
+### Sunshine Doctor
+
+Save [doctor.ps1](./doctor.ps1) and run these commands in PowerShell from the download folder.
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\doctor.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\doctor.ps1 -Fix
+```
+
+The first command checks for problems. Add `-Fix` to apply the available repairs, or add `-Fix -WhatIf` to preview them.
+
+
 <details>
 <summary>Uninstall</summary>
 
